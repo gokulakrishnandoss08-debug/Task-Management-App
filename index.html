@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task Management App</title>
+</head>
+<body>
+
+<h1>Task Management App</h1>
+
+<input type="text" id="task" placeholder="Enter Task">
+<button onclick="addTask()">Add Task</button>
+
+<ul id="taskList"></ul>
+
+<script>
+function addTask() {
+    let task = document.getElementById("task").value;
+    let li = document.createElement("li");
+    li.innerText = task;
+    document.getElementById("taskList").appendChild(li);
+}
+</script>
+
+</body>
+</html>
